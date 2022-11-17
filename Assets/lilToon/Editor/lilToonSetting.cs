@@ -257,7 +257,7 @@ public class lilToonSetting : ScriptableObject
         shaderSetting.LIL_FEATURE_AUDIOLINK_VERTEX = false;
         shaderSetting.LIL_FEATURE_AUDIOLINK_LOCAL = false;
         shaderSetting.LIL_FEATURE_DISSOLVE = false;
-        shaderSetting.LIL_FEATURE_ENCRYPTION = lilDirectoryManager.ExistsEncryption();
+        shaderSetting.LIL_FEATURE_ENCRYPTION = lilDirectoryManager.ExistsEncryption() || lilDirectoryManager.ExistsAvaCryptV2();
         shaderSetting.LIL_FEATURE_ANIMATE_OUTLINE_UV = false;
         shaderSetting.LIL_FEATURE_OUTLINE_TONE_CORRECTION = false;
         shaderSetting.LIL_FEATURE_OUTLINE_RECEIVE_SHADOW = false;
@@ -363,7 +363,7 @@ public class lilToonSetting : ScriptableObject
         shaderSetting.LIL_FEATURE_AUDIOLINK_VERTEX = true;
         shaderSetting.LIL_FEATURE_AUDIOLINK_LOCAL = true;
         shaderSetting.LIL_FEATURE_DISSOLVE = true;
-        shaderSetting.LIL_FEATURE_ENCRYPTION = lilDirectoryManager.ExistsEncryption();
+        shaderSetting.LIL_FEATURE_ENCRYPTION = lilDirectoryManager.ExistsEncryption() || lilDirectoryManager.ExistsAvaCryptV2();
         shaderSetting.LIL_FEATURE_ANIMATE_OUTLINE_UV = true;
         shaderSetting.LIL_FEATURE_OUTLINE_TONE_CORRECTION = true;
         shaderSetting.LIL_FEATURE_OUTLINE_RECEIVE_SHADOW = true;
